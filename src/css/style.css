@@ -311,6 +311,38 @@ body {
   border-top: 1px solid rgba(26,26,46,0.1);
 }
 
+.footer-disclaimer-wrap {
+  max-width: 32rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-cred-line {
+  margin-top: 2rem;
+  font-size: 0.9375rem;
+  letter-spacing: 0.07em;
+  font-weight: 500;
+  color: rgba(255,255,255,0.88);
+  text-transform: uppercase;
+}
+
+.footer-disclaimer-text {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.42);
+}
+
+.footer-disclaimer-link {
+  text-decoration: underline;
+  color: inherit;
+  transition: color 0.18s ease;
+}
+
+.footer-disclaimer-link:hover {
+  color: rgba(255,255,255,0.85);
+}
+
 /* ── Animations ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -335,8 +367,29 @@ body {
   flex-direction: column;
 }
 
-/* ── Utility ── */
-.text-brand  { color: var(--blue-brand); }
-.text-vivid  { color: var(--blue-vivid); }
-.bg-vivid    { background-color: var(--blue-vivid); }
-.bg-near-black { background-color: var(--near-black); }
+/* ── Legal Content Spacing ── */
+.legal-content p {
+  margin-bottom: 1rem !important;
+}
+
+.legal-content h2, .legal-content h3 {
+  margin-top: 2.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.legal-content ul, .legal-content ol {
+  margin: 1rem 0 1rem 1.5rem !important;
+}
+/* Legal page link styling */
+.prose a {
+  color: #3478EB;
+  text-decoration: underline;
+}
+.prose a:hover {
+  color: #2B3D9A;
+}
+
+.prose h2[id],
+.prose h3[id] {
+  scroll-margin-top: 5rem;
+}

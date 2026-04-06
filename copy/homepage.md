@@ -1,13 +1,13 @@
 # Homepage Copy
 
 ## Hero Headline
-Your 401(k) wasn't built for a 100-year life.
+The 401(k) wasn't built for a 100-year life.
 
 ## Hero Subtext
 This is the first thing that was.
 
 ## Hero Introduction Paragraph
-Meet Savvly: They reinvented the way people save and invest for retirement. Now the math that works for big corporations works for people. Think sharing economy for retirement savings.
+Meet Savvly: We reinvented the way people save and invest for retirement. Now the math that works for big corporations works for people. Think sharing economy for retirement savings.
 
 ## Video URL
 YouTube embed: https://www.youtube.com/embed/07bCG36uYDQ
