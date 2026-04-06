@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savvly — About</title>
+  <meta name="description" content="About Savvly: Our mission to make living a long life a reward, not a punishment. Meet our founders and team." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind via CDN with brand config -->
+  <script>
+    window.tailwind = window.tailwind || {};
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand':      '#3478EB',
+            'vivid':      '#2B3D9A',
+            'baby':       '#A7C7E7',
+            'pollon':     '#ECD06F',
+            'near-black': '#1A1A2E',
+          },
+          fontFamily: {
+            display: ['Source Serif 4', 'Georgia', 'serif'],
+            body: ['Verdana', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: {
+            'tight-xl': '-0.03em',
+            'tight-lg': '-0.02em',
+          },
+          lineHeight: {
+            'body': '1.68',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-white font-body text-near-black antialiased">
+
+  <!-- ══════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════ -->
+  <header class="bg-white sticky top-0 z-50" role="banner">
+    <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded" aria-label="Savvly home">
+        <img
+          src="../brand_assets/logo/savvly_logo.png"
+          alt="Savvly"
+          class="h-7 w-auto"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+        />
+        <span class="hidden font-display font-semibold text-2xl tracking-wide" style="color:#2B3D9A;">SAVVLY</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul id="nav-links" class="hidden md:flex items-center gap-8 list-none m-0 p-0" role="list">
+        <li><a href="how-it-works.html" class="text-sm font-body font-medium">How It Works</a></li>
+        <li><a href="employers.html" class="text-sm font-body font-medium">Employers</a></li>
+        <li><a href="advisors.html" class="text-sm font-body font-medium">Financial Advisors</a></li>
+        <li><a href="brokers.html" class="text-sm font-body font-medium">Benefit Brokers</a></li>
+        <li><a href="about.html" class="text-sm font-body font-medium active">About</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="hidden md:block">
+        <a href="#demo" class="btn-nav">Get Started</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button
+        id="hamburger"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="md:hidden flex flex-col gap-[5px] p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded"
+      >
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden bg-white border-t px-6 pb-6 flex flex-col gap-4" style="border-color: rgba(43,61,154,0.1);">
+      <a href="how-it-works.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">How It Works</a>
+      <a href="employers.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">Employers</a>
+      <a href="advisors.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">Financial Advisors</a>
+      <a href="brokers.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">Benefit Brokers</a>
+      <a href="about.html" class="text-sm font-medium py-2 active" style="color:#2B3D9A;">About</a>
+      <a href="#demo" class="btn-nav self-start mt-2">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <main>
+
+    <!-- Hero -->
+    <section class="bg-white px-6 py-16" aria-label="Hero">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="font-display font-normal text-near-black mb-6" style="font-size: clamp(2.5rem, 6vw, 4rem); letter-spacing: -0.03em; line-height: 1.1;">
+          A long life should be a reward. Not a risk.
+        </h1>
+        <p class="font-body text-lg leading-relaxed text-near-black/70 mt-12">
+          <strong>This is our why.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Why -->
+    <section class="bg-baby/10 px-6 py-8" aria-label="Our why">
+      <div class="max-w-4xl mx-auto">
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          When it comes to growing wealth and securing their retirement, millions of Americans <strong>fear</strong> that they won't have enough.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          They are correct. There is no solution to this problem.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          <strong>Until now.</strong>
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          We created a first-of-its-kind financial technology that gives:
+        </p>
+        <ul class="font-body leading-relaxed text-near-black/80 mb-6 list-disc list-inside">
+          <li><strong>Consumers</strong> a financial confidence in their future, that frees them up to spend more now.</li>
+          <li><strong>Employers</strong> a way to retain their best, reward the faithful, and make room for young new stars.</li>
+          <li><strong>Financial Advisors</strong> a way to retain clients, and magnify their relevance.</li>
+        </ul>
+        <p class="font-body leading-relaxed text-near-black/80">
+          To do this, Savvly has invented the opposite of life insurance: a security you own that pays you for living a long life, not for dying.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mt-6">
+          We feel certain this will give Americans the financial confidence to spend more now, retire earlier, without running out of money.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Rules -->
+    <section class="bg-white px-6 py-16" aria-label="Our rules">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-display font-semibold text-near-black mb-8" style="font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.025em;">
+          These are our rules
+        </h2>
+        <div class="space-y-8">
+          <div class="pb-6 border-b border-baby/20 last:border-b-0">
+            <strong class="font-display font-semibold text-brand block">Human Outcomes, even over Financial Efficiency:</strong>
+            <p class="font-body leading-relaxed text-near-black/80 mt-2">We will spend more per customer than a purely optimized system would. We will prioritize peace of mind over margin. Because we're not optimizing for efficiency; we're optimizing so our clients sleep better.</p>
+          </div>
+          <div class="pb-6 border-b border-baby/20 last:border-b-0">
+            <strong class="font-display font-semibold text-brand block">Integrity, even over Innovation:</strong>
+            <p class="font-body leading-relaxed text-near-black/80 mt-2">We will kill a clever feature if it creates confusion. We will not use behavioral tricks to boost conversion. If innovation compromises trust, innovation loses.</p>
+          </div>
+          <div class="pb-6 border-b border-baby/20 last:border-b-0">
+            <strong class="font-display font-semibold text-brand block">Transparency, even over Comfort:</strong>
+            <p class="font-body leading-relaxed text-near-black/80 mt-2">We will tell you things you don't want to hear. We will show you the math even when it's ugly. We will not hide behind jargon or optimism. You deserve the truth, always.</p>
+          </div>
+          <div class="pb-6 border-b border-baby/20 last:border-b-0">
+            <strong class="font-display font-semibold text-brand block">Long-term Thinking, even over Short-term Optics:</strong>
+            <p class="font-body leading-relaxed text-near-black/80 mt-2">We will make decisions that look shaky in the next quarter, but right in the next decade. We will not optimize for press releases. We're building for the long haul.</p>
+          </div>
+          <div class="pb-6 border-b border-baby/20 last:border-b-0">
+            <strong class="font-display font-semibold text-brand block">Stability, even over Speed:</strong>
+            <p class="font-body leading-relaxed text-near-black/80 mt-2">We will ship slower than competitors. We will miss market windows. We will frustrate people who want features now. In a regulated industry handling retirement money, there's no second chance to get it right.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founders -->
+    <section class="bg-baby/10 px-6 py-16" aria-label="Our founders">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-display font-semibold text-near-black mb-8" style="font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.025em;">
+          These are our founders
+        </h2>
+        <div class="mb-8">
+          <img src="../brand_assets/team/Dario_and_Tony.jpg" alt="Dario Fusato and Tony Derossi" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg" />
+        </div>
+        <h3 class="font-display font-semibold text-near-black mb-4" style="font-size: 1.5rem;">The problem they saw...</h3>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          When Dario Fusato and Tony Derossi arrived in the U.S. from Italy, they noticed a disturbing paradox. They saw a nation of people who did everything right — they worked hard, they saved diligently, and they followed the rules.
+        </p>
+        <p class="font-body italic text-lg leading-relaxed text-near-black/80 mb-6">
+          <em>But the rules had changed.</em>
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          They realized that the American financial system was built on a 20th-century assumption: that you retire at 65 and pass away by 75. But in a world where living to 95 is becoming the norm, the "safe" path had become a trap. The reward for a healthy life was the risk of poverty in your final decades.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          They started with a single question: How do I achieve the highest level of financial security in my later years for the smallest amount of money possible?
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          That was the beginning of the company.
+        </p>
+        <h3 class="font-display font-semibold text-near-black mb-4" style="font-size: 1.5rem;">How they built the solution</h3>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Many fintech startups try to move fast and break things. When dealing with people's life savings, that is dangerous.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          So, they chose the hard road. They didn't try to bypass the regulators; they sat down with them. They spent years in the trenches with the SEC and financial leaders to architect a completely new asset class.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          It wasn't the fastest way to build a company. But it was the only way to build a solution that is safe enough for your future.
+        </p>
+        <h3 class="font-display font-semibold text-near-black mb-4" style="font-size: 1.5rem;">Why they built it</h3>
+        <p class="font-body leading-relaxed text-near-black/80">
+          Dario and Tony are here to close the gap between your life expectancy and your bank account. They aren't out to replace your 401(k); they are here to reward you for living a long life.
+        </p>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-white px-6 py-16" aria-label="Our team">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="font-display font-semibold text-near-black mb-12 text-center" style="font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.025em;">
+          These are our team members
+        </h2>
+        <div class="grid grid-cols-6 gap-8">
+          <div class="col-span-2 text-center">
+            <img src="../brand_assets/team/Dario-Enhanced-SR.jpg" alt="Dario Fusato" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <h3 class="font-display font-semibold text-near-black">Dario Fusato</h3>
+            <p class="font-body text-sm text-near-black/70">Co-founder & CEO</p>
+            <p class="font-body text-xs text-near-black/60">Former MD at AJG, COO AGS at Aon. Ex-McKinsey.</p>
+          </div>
+          <div class="col-span-2 text-center">
+            <img src="../brand_assets/team/Tony-Enhanced-SR.jpg" alt="Tony Derossi" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <h3 class="font-display font-semibold text-near-black">Tony Derossi</h3>
+            <p class="font-body text-sm text-near-black/70">Co-founder & COO</p>
+            <p class="font-body text-xs text-near-black/60">Former COO at Allianz and FFI. Ex-McKinsey, Fireman's Fund.</p>
+          </div>
+          <div class="col-span-2 text-center">
+            <img src="../brand_assets/team/Rob-Enhanced-SR.jpg" alt="Rob Evans" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <h3 class="font-display font-semibold text-near-black">Rob Evans</h3>
+            <p class="font-body text-sm text-near-black/70">General Counsel</p>
+            <p class="font-body text-xs text-near-black/60">Former Securities and Exchange Commission, Shearman & Sterling.</p>
+          </div>
+          <div class="col-start-2 col-span-2 text-center">
+            <img src="../brand_assets/team/Franz-Enhanced-SR.jpg" alt="Frantz Romain" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <h3 class="font-display font-semibold text-near-black">Frantz Romain</h3>
+            <p class="font-body text-sm text-near-black/70">Head of Technology</p>
+            <p class="font-body text-xs text-near-black/60">Cofounder PROFIT, acquired by NYSE: PAY.</p>
+          </div>
+          <div class="col-start-4 col-span-2 text-center">
+            <img src="../brand_assets/team/Hilla-Enhanced-SR.jpg" alt="Hilla Hascalovici" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <h3 class="font-display font-semibold text-near-black">Hilla Hascalovici</h3>
+            <p class="font-body text-sm text-near-black/70">Head of Go-To-Market</p>
+            <p class="font-body text-xs text-near-black/60">Former Goldman Sachs, JPM Chase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-baby/10 px-6 py-16" aria-label="FAQ">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-display font-semibold text-near-black mb-8" style="font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.025em;">
+          These are some of our most asked questions
+        </h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-display font-semibold text-near-black mb-2">Why do I need this?</h3>
+            <p class="font-body leading-relaxed text-near-black/80">
+              The math of retirement is broken. Standard 401(k)s are designed to last until you are 85. But you are statistically likely to live past 90. Savvly provides the paycheck for the decades your 401(k) wasn't built to cover.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-display font-semibold text-near-black mb-2">Does this replace my 401(k)?</h3>
+            <p class="font-body leading-relaxed text-near-black/80">
+              No. Keep your 401(k); it's great for your 60s and 70s. Savvly is designed exclusively for your 80s, 90s, and beyond. Think of us as the 'Late-Stage Booster' for your existing portfolio.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-display font-semibold text-near-black mb-2">Is this legal and safe?</h3>
+            <p class="font-body leading-relaxed text-near-black/80">
+              We didn't take shortcuts. We spent years working directly with the SEC to build a compliant, transparent framework. In a world of financial 'hacks' and crypto-schemes, we chose the hard path of regulation because your longevity is too important to gamble with.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-display font-semibold text-near-black mb-2">Is this just for rich people?</h3>
+            <p class="font-body leading-relaxed text-near-black/80">
+              It used to be. Historically, 'longevity hedging' was a luxury product for the ultra-wealthy. We believe that is wrong. We built Savvly to be employer-funded so that financial dignity in old age is a standard benefit, not a luxury good.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gentle CTA -->
+    <section class="bg-white px-6 py-16" aria-label="Contact">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          We would love to hear from you. We welcome your thoughts and questions. Feel free to reach out: <a href="mailto:Dario@Savvly.com" class="text-brand hover:underline">Dario@Savvly.com</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="bg-vivid px-6 py-10" role="contentinfo">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+
+      <!-- Logo + copyright -->
+      <div class="flex flex-col gap-2">
+        <a href="index.html" aria-label="Savvly home" class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-baby rounded">
+          <img
+            src="../brand_assets/logo/savvly_logo.png"
+            alt="Savvly"
+            class="h-6 w-auto"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <span class="hidden text-white font-display font-semibold text-xl tracking-wide">SAVVLY</span>
+        </a>
+        <p class="text-white/40 text-xs font-body">© 2025 Savvly. All rights reserved.</p>
+      </div>
+
+      <!-- Legal links -->
+      <nav aria-label="Legal navigation">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 list-none m-0 p-0" role="list">
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Privacy</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Terms</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Disclosures</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Disclaimers</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Assumptions</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

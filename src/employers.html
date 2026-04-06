@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savvly — Employers</title>
+  <meta name="description" content="Savvly for employers: A corporate longevity benefit that sits alongside your 401(k) to protect employees from outliving their savings." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind via CDN with brand config -->
+  <script>
+    window.tailwind = window.tailwind || {};
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand':      '#3478EB',
+            'vivid':      '#2B3D9A',
+            'baby':       '#A7C7E7',
+            'pollon':     '#ECD06F',
+            'near-black': '#1A1A2E',
+          },
+          fontFamily: {
+            display: ['Source Serif 4', 'Georgia', 'serif'],
+            body: ['Verdana', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: {
+            'tight-xl': '-0.03em',
+            'tight-lg': '-0.02em',
+          },
+          lineHeight: {
+            'body': '1.68',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-white font-body text-near-black antialiased">
+
+  <!-- ══════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════ -->
+  <header class="bg-white sticky top-0 z-50" role="banner">
+    <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded" aria-label="Savvly home">
+        <img
+          src="../brand_assets/logo/savvly_logo.png"
+          alt="Savvly"
+          class="h-7 w-auto"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+        />
+        <span class="hidden font-display font-semibold text-2xl tracking-wide" style="color:#2B3D9A;">SAVVLY</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul id="nav-links" class="hidden md:flex items-center gap-8 list-none m-0 p-0" role="list">
+        <li><a href="how-it-works.html" class="text-sm font-body font-medium">How It Works</a></li>
+        <li><a href="employers.html" class="text-sm font-body font-medium active">Employers</a></li>
+        <li><a href="advisors.html" class="text-sm font-body font-medium">Financial Advisors</a></li>
+        <li><a href="brokers.html" class="text-sm font-body font-medium">Benefit Brokers</a></li>
+        <li><a href="about.html" class="text-sm font-body font-medium">About</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="hidden md:block">
+        <a href="#demo" class="btn-nav">Get Started</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button
+        id="hamburger"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="md:hidden flex flex-col gap-[5px] p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded"
+      >
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden bg-white border-t px-6 pb-6 flex flex-col gap-4" style="border-color: rgba(43,61,154,0.1);">
+      <a href="how-it-works.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">How It Works</a>
+      <a href="employers.html" class="text-sm font-medium py-2 active" style="color:#2B3D9A;">Employers</a>
+      <a href="advisors.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">Financial Advisors</a>
+      <a href="brokers.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">Benefit Brokers</a>
+      <a href="about.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">About</a>
+      <a href="#demo" class="btn-nav self-start mt-2">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <main>
+
+    <!-- AEO Layer / Eyebrow Direct Answer Block -->
+    <section class="bg-white px-6 py-12" aria-label="What is a corporate longevity benefit">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="font-display font-normal text-near-black mb-4" style="font-size: clamp(1.5rem, 4vw, 2.5rem); letter-spacing: -0.02em;">
+          Employers / HR
+        </h1>
+        <p class="font-mono text-justify uppercase" style="font-size: 6px; letter-spacing: 0.4em; line-height: 1.2; opacity: 0.18; word-spacing: 0.8em; text-align-last: justify;">
+          What is a corporate longevity benefit? A corporate longevity benefit is an employer-sponsored retirement layer designed to protect employees from outliving their savings. It sits alongside a 401(k), using a capital markets structure to generate cash payouts at ages 80, 85, 90, and 95.
+        </p>
+      </div>
+    </section>
+
+    <!-- Block 1 -->
+    <section class="bg-white px-6 py-16" aria-label="Why your employees are terrified">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="font-display font-semibold text-near-black mb-6" style="font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.025em; line-height: 1.1;">
+          You match their 401(k). You pay their healthcare<br>
+          <span class="text-brand">Why are your best people still terrified of the future?</span>
+        </h2>
+        <p class="font-body text-lg leading-relaxed mb-8 max-w-2xl mx-auto text-near-black/80">
+          The modern 401(k) has an expiration date. Your employees do not.
+        </p>
+        <p class="font-body leading-relaxed mb-10 max-w-3xl mx-auto text-near-black/70">
+          The Savvly Longevity Benefit is a new kind of retirement layer that sits alongside your existing 401(k). It doesn't replace anything. It covers the years that nothing else covers.
+        </p>
+        <a href="#workforce" class="btn-primary">See What This Looks Like for Your Workforce ↓</a>
+      </div>
+    </section>
+
+    <!-- Block 2 -->
+    <section id="workforce" class="bg-baby/10 px-6 py-16" aria-label="The math is scaring them">
+      <div class="max-w-4xl mx-auto">
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Your employees are quietly doing the math on a 100-year life. The math is scaring them.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Most workers worry more about outliving their money than they do about dying. That anxiety doesn't stay at home. It comes to work. It shows up as distraction, disengagement, and turnover.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          It hits you at both ends of the talent pipeline.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Your mid-career employees leave for a competitor over a slight bump in salary because they feel behind on savings. A better match, a signing bonus, anything that closes the gap they see growing between where they are and where they need to be.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Your senior employees do the opposite. They stay too long. The people who should be stepping into retirement cling to their desks into their 70s because they can't afford to stop. That blocks promotions for the people behind them. It drives up your healthcare costs. And it creates a bottleneck you can't fix with a conversation.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80">
+          You can't solve a 30-year retirement gap by tweaking a 401(k) match. You need something that didn't exist before.
+        </p>
+      </div>
+    </section>
+
+    <!-- Block 3 -->
+    <section class="bg-white px-6 py-16" aria-label="What you have to do">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="font-display font-semibold text-near-black mb-6" style="font-size: clamp(1.75rem, 4vw, 2.5rem); letter-spacing: -0.02em;">
+          What you actually have to do.
+        </h3>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Very little.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Savvly was built for zero administrative lift. There is no complex ERISA nondiscrimination testing. No new record-keeper to integrate. No new vendor to manage. It runs parallel to your existing systems and plugs into the payroll and benefits platforms you already use, like Gusto, ADP, and Rippling.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Savvly handles the fund management, the SEC compliance, the actuarial math, and the employee education materials. You sign up. Your employees enroll. That's it.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-8">
+          Your team can be live in under a week.
+        </p>
+        <a href="#setup" class="text-brand hover:underline font-medium">See how setup works →</a>
+      </div>
+    </section>
+
+    <!-- Block 4 -->
+    <section id="setup" class="bg-baby/10 px-6 py-16" aria-label="What employees get">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="font-display font-semibold text-near-black mb-6" style="font-size: clamp(1.75rem, 4vw, 2.5rem); letter-spacing: -0.02em;">
+          What your employees actually get.
+        </h3>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Each participating employee contributes a small monthly amount, as little as $10 to $100, into the Savvly Longevity Pool. This runs alongside their existing 401(k) or IRA. They are not moving their savings. They are adding something new.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Their money is invested in S&P 500 ETFs held by institutional custodians like US Bank. That gives them market returns the same way their current accounts do.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          But the pool adds a second layer. When members leave the pool early or pass away, their uncollected growth stays in the pool and flows to everyone who remains. The longer your employee stays in, the more that flow works in their favor.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Starting at age 80, the pool pays out in structured cash installments: 40% at 80, 30% at 85, 20% at 90, and 10% at 95. These arrive around the time traditional savings are most likely to run thin.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          If an employee leaves the company, the account goes with them. It's fully portable. If they need to cash out early or if they pass away before 80, they or their estate receive 75% of their initial investment plus 1% for every year they participated. Their money is never trapped.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-8">
+          For the full mechanics, see <a href="how-it-works.html" class="text-brand hover:underline font-medium">How It Works →</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Block 5 -->
+    <section class="bg-white px-6 py-16" aria-label="Cost and savings">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="font-display font-semibold text-near-black mb-6" style="font-size: clamp(1.75rem, 4vw, 2.5rem); letter-spacing: -0.02em;">
+          What it costs you. What it saves you.
+        </h3>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          For a 35-year-old manager, a $100/month employer contribution to Savvly costs less than a gym membership. That same contribution can become a meaningful retention tool that compounds over decades.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          For a 62-year-old senior employee, Savvly can be part of a voluntary early-retirement program. Instead of a standard cash severance that gets taxed immediately and spent quickly, you offer a split package: partial cash now, plus a Savvly contribution that grows and pays out across their later years. The employee walks away with more long-term value. You get the same headcount reduction at the same or lower cost, and you free up positions for the people behind them. We provide the employee-facing materials to make the conversation easy.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-10">
+          This is not a wellness perk. It is a financial tool that works on both sides of the table.
+        </p>
+        <h4 class="font-display font-semibold text-near-black mb-6" style="font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em;">
+          Run the numbers for your organization.
+        </h4>
+        <!-- Placeholder for calculator -->
+        <div class="bg-baby/20 border border-baby rounded-lg p-8 text-center">
+          <p class="font-body text-near-black/60">[Interactive UI Element: The Savvly Employer ROI Calculator]</p>
+          <p class="font-body text-sm text-near-black/50 mt-4">Input fields: Number of employees, Average age of workforce, Average annual salary, Estimated monthly contribution per employee.</p>
+          <p class="font-body text-sm text-near-black/50 mt-2">Output: Estimated annual cost, Projected reduction in retirement-age healthcare burden, Estimated retention improvement based on modeled scenarios.</p>
+          <p class="font-body text-xs text-near-black/40 mt-4 italic">Disclaimer: "This calculator uses hypothetical scenarios for illustrative purposes only. Actual results will vary based on workforce demographics and market conditions."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Block 6 - FAQ -->
+    <section class="bg-baby/10 px-6 py-16" aria-label="FAQ">
+      <div class="max-w-4xl mx-auto">
+        <details class="mb-6">
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] How is the Savvly Longevity Benefit different from an annuity?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            Savvly is a capital markets investment fund, not an insurance contract. Contributions are invested in low-cost S&P 500 ETFs held by third-party custodians. When pool members exit, their uncollected growth is redistributed directly to remaining participants. There is no insurance company involved and no complex contract terms.
+          </p>
+        </details>
+        <details class="mb-6">
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] Does offering Savvly create fiduciary risk for the employer?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            No. Savvly operates as an SEC-registered investment adviser. Assets are held by regulated third-party custodians. The employer provides access. Savvly manages the fund.
+          </p>
+        </details>
+        <details class="mb-6">
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] How is the Longevity Benefit taxed?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            Savvly follows the tax treatment of the account type. In a qualified account like a 401(k) or IRA, standard qualified account tax rules apply. In a non-qualified account, growth and payouts are generally subject to capital gains treatment. Employees should consult their tax advisor for specifics.
+          </p>
+        </details>
+        <details class="mb-6">
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] Is the benefit portable if an employee leaves?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            Yes. The account belongs to the employee. If they change jobs, it goes with them. They keep their progress toward their milestone payouts.
+          </p>
+        </details>
+        <details>
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] How long does setup take?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            Most employers are live within a week. Savvly integrates with existing payroll and benefits platforms. There is no new infrastructure to build.
+          </p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="bg-vivid px-6 py-10" role="contentinfo">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+
+      <!-- Logo + copyright -->
+      <div class="flex flex-col gap-2">
+        <a href="index.html" aria-label="Savvly home" class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-baby rounded">
+          <img
+            src="../brand_assets/logo/savvly_logo.png"
+            alt="Savvly"
+            class="h-6 w-auto"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <span class="hidden text-white font-display font-semibold text-xl tracking-wide">SAVVLY</span>
+        </a>
+        <p class="text-white/40 text-xs font-body">© 2025 Savvly. All rights reserved.</p>
+      </div>
+
+      <!-- Legal links -->
+      <nav aria-label="Legal navigation">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 list-none m-0 p-0" role="list">
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Privacy</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Terms</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Disclosures</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Disclaimers</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Assumptions</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

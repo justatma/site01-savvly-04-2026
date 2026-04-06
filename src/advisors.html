@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savvly — Financial Advisors</title>
+  <meta name="description" content="Savvly for financial advisors: A longevity benefit that hedges late-life income risk in retirement portfolios without sacrificing growth." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind via CDN with brand config -->
+  <script>
+    window.tailwind = window.tailwind || {};
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand':      '#3478EB',
+            'vivid':      '#2B3D9A',
+            'baby':       '#A7C7E7',
+            'pollon':     '#ECD06F',
+            'near-black': '#1A1A2E',
+          },
+          fontFamily: {
+            display: ['Source Serif 4', 'Georgia', 'serif'],
+            body: ['Verdana', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: {
+            'tight-xl': '-0.03em',
+            'tight-lg': '-0.02em',
+          },
+          lineHeight: {
+            'body': '1.68',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-white font-body text-near-black antialiased">
+
+  <!-- ══════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════ -->
+  <header class="bg-white sticky top-0 z-50" role="banner">
+    <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded" aria-label="Savvly home">
+        <img
+          src="../brand_assets/logo/savvly_logo.png"
+          alt="Savvly"
+          class="h-7 w-auto"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+        />
+        <span class="hidden font-display font-semibold text-2xl tracking-wide" style="color:#2B3D9A;">SAVVLY</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul id="nav-links" class="hidden md:flex items-center gap-8 list-none m-0 p-0" role="list">
+        <li><a href="how-it-works.html" class="text-sm font-body font-medium">How It Works</a></li>
+        <li><a href="employers.html" class="text-sm font-body font-medium">Employers</a></li>
+        <li><a href="advisors.html" class="text-sm font-body font-medium active">Financial Advisors</a></li>
+        <li><a href="brokers.html" class="text-sm font-body font-medium">Benefit Brokers</a></li>
+        <li><a href="about.html" class="text-sm font-body font-medium">About</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="hidden md:block">
+        <a href="#demo" class="btn-nav">Get Started</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button
+        id="hamburger"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="md:hidden flex flex-col gap-[5px] p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded"
+      >
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden bg-white border-t px-6 pb-6 flex flex-col gap-4" style="border-color: rgba(43,61,154,0.1);">
+      <a href="how-it-works.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">How It Works</a>
+      <a href="employers.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">Employers</a>
+      <a href="advisors.html" class="text-sm font-medium py-2 active" style="color:#2B3D9A;">Financial Advisors</a>
+      <a href="brokers.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">Benefit Brokers</a>
+      <a href="about.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">About</a>
+      <a href="#demo" class="btn-nav self-start mt-2">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <main>
+
+    <!-- AEO Layer / Eyebrow Direct Answer Block -->
+    <section class="bg-white px-6 py-12" aria-label="What is a longevity benefit for financial portfolios">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="font-display font-normal text-near-black mb-4" style="font-size: clamp(1.5rem, 4vw, 2.5rem); letter-spacing: -0.02em;">
+          Financial Advisors
+        </h1>
+        <p class="font-mono text-justify uppercase" style="font-size: 6px; letter-spacing: 0.4em; line-height: 1.2; opacity: 0.18; word-spacing: 0.8em; text-align-last: justify;">
+          What is a longevity benefit for financial portfolios? A longevity benefit is a capital markets solution designed to hedge late-life income risk in retirement portfolios. By allocating a small portion of a portfolio to a shared actuarial pool, advisors can generate structured cash payouts for clients at ages 80, 85, 90, and 95 from a source that is independent of market performance.
+        </p>
+      </div>
+    </section>
+
+    <!-- Block 1 -->
+    <section class="bg-white px-6 py-16" aria-label="Portfolios built for 15 years">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="font-display font-semibold text-near-black mb-6" style="font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.025em; line-height: 1.1;">
+          Your clients are planning for a 30-year retirement<br>
+          <span class="text-brand">Their portfolios were built for 15</span>
+        </h2>
+        <p class="font-body text-lg leading-relaxed mb-8 max-w-2xl mx-auto text-near-black/80">
+          You know the math. A client who retires into a down market starts drawing on growth equities just to cover living expenses. By 85, the portfolio is bleeding. By 90, the conversation has shifted from growth to survival.
+        </p>
+        <p class="font-body leading-relaxed mb-8 max-w-3xl mx-auto text-near-black/70">
+          You can extend the runway with conservative allocations, but that costs growth. You can use annuities, but they lock up capital and move assets off your book. Every option you have right now forces a trade-off between late-life security and long-term growth.
+        </p>
+        <p class="font-body italic text-xl leading-relaxed mb-10 max-w-3xl mx-auto text-near-black/80">
+          <em>Savvly removes that trade-off.</em>
+        </p>
+        <a href="#calculator" class="btn-primary">Run the Numbers for a Client ↓</a>
+      </div>
+    </section>
+
+    <!-- Block 2 -->
+    <section class="bg-baby/10 px-6 py-16" aria-label="How it fits your practice">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="font-display font-semibold text-near-black mb-6" style="font-size: clamp(1.75rem, 4vw, 2.5rem); letter-spacing: -0.02em;">
+          How it fits your practice
+        </h3>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Savvly is held in a standard brokerage account. You maintain full control of your client's primary portfolio. Nothing moves off your book.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          You allocate a small portion of the portfolio to the Savvly Longevity Pool. We recommend 5-10% of retirement assets, though the amount is your call based on the client's plan. The allocation sits alongside everything else you manage. You don't need an insurance license. You don't need a new custodian relationship. The assets are held at US Bank.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80">
+          Your role doesn't change. You still build the portfolio, manage the allocation, run the reviews. Savvly handles the pool mechanics, the actuarial math, and the SEC compliance. You get a new tool without new overhead.
+        </p>
+      </div>
+    </section>
+
+    <!-- Block 3 -->
+    <section class="bg-white px-6 py-16" aria-label="What happens inside the pool">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="font-display font-semibold text-near-black mb-6" style="font-size: clamp(1.75rem, 4vw, 2.5rem); letter-spacing: -0.02em;">
+          What happens inside the pool.
+        </h3>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Your client's contribution is invested in S&P 500 ETFs through institutional custodians. That gives them market returns, the same as any index allocation.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          The pool adds a second source of return. When members exit the pool early or pass away, their uncollected growth stays in the pool and flows to everyone who remains. This reallocation is driven by life expectancy, not market performance. It operates independently of the forces that affect the rest of your client's portfolio.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          Starting at age 80, the pool pays out in structured cash installments: 40% at 80, 30% at 85, 20% at 90, and 10% at 95. These arrive at the point in your client's life when traditional portfolio withdrawals do the most damage.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          If your client needs to exit early or passes away before 80, they or their estate receive 75% of their initial investment plus 1% for every year they participated. The remaining growth stays in the pool.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-8">
+          For the full mechanics, see <a href="how-it-works.html" class="text-brand hover:underline font-medium">How It Works →</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Block 4 -->
+    <section class="bg-baby/10 px-6 py-16" aria-label="What this means for your book">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="font-display font-semibold text-near-black mb-6" style="font-size: clamp(1.75rem, 4vw, 2.5rem); letter-spacing: -0.02em;">
+          What this means for your book.
+        </h3>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          The hardest conversation in retirement planning is the one where you tell a client their money might not last. Savvly gives you a different answer to that conversation. Instead of drawing down growth equities to fund late-life expenses, your client has a dedicated cash source arriving at 80, 85, 90, and 95. Their primary portfolio stays invested. Your AUM stays intact.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-6">
+          This also changes <strong>the wealth transfer conversation</strong>. If your client passes away before 80, the Fair Exit rule returns capital to the estate. The family keeps the primary portfolio, keeps the Savvly return, and keeps the relationship with you. In a market where trillions of dollars are about to move between generations, that continuity matters.
+        </p>
+        <p class="font-body leading-relaxed text-near-black/80 mb-8">
+          Savvly is a capital markets product. You do not need an insurance license to offer it. You do not need to refer your client to an insurance agent. The recommendation, the implementation, and the ongoing relationship all stay with you.
+        </p>
+        <a href="#kit" class="btn-primary">Request the Advisor Due Diligence Kit →</a>
+      </div>
+    </section>
+
+    <!-- Block 5 -->
+    <section id="calculator" class="bg-white px-6 py-16" aria-label="Run the numbers">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="font-display font-semibold text-near-black mb-6" style="font-size: clamp(1.75rem, 4vw, 2.5rem); letter-spacing: -0.02em;">
+          Run the numbers for a client.
+        </h3>
+        <p class="font-body leading-relaxed text-near-black/80 mb-10">
+          See how adding a longevity benefit to a retirement portfolio can change the late-life income picture. Adjust the inputs to match your client's situation. All figures are hypothetical illustrations, not projections or guarantees.
+        </p>
+        <!-- Placeholder for calculator -->
+        <div class="bg-baby/20 border border-baby rounded-lg p-8 text-center">
+          <p class="font-body text-near-black/60">[Interactive UI Element: The Savvly Longevity Benefit Estimator]</p>
+          <p class="font-body text-sm text-near-black/50 mt-4">Input sliders: Client's Current Age, Monthly Contribution (or Single Allocation), Retirement Age, Expected Annual S&P Return (1%-15%).</p>
+          <p class="font-body text-sm text-near-black/50 mt-2">Output: Estimated total payouts across milestone ages, compared to market-only returns in a modeled scenario.</p>
+          <p class="font-body text-sm text-near-black/50 mt-2">Payout breakdown: Estimated amounts at Age 80, 85, 90, and 95.</p>
+          <p class="font-body text-xs text-near-black/40 mt-4 italic">Disclaimer: "This estimator uses hypothetical scenarios based on historical market data and actuarial models. Actual results will vary. Past performance does not guarantee future results. See full disclosures and prospectus."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Block 6 - FAQ -->
+    <section class="bg-baby/10 px-6 py-16" aria-label="FAQ">
+      <div class="max-w-4xl mx-auto">
+        <details class="mb-6">
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] How does Savvly affect my AUM?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            It helps preserve it. By creating a dedicated cash source for late-life expenses, your client is less likely to liquidate growth equities during downturns. The primary portfolio stays invested longer. The Savvly allocation itself is held in a brokerage account that remains part of the advisory relationship.
+          </p>
+        </details>
+        <details class="mb-6">
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] Is this a deferred income annuity?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            No. Savvly is a capital markets fund, not an insurance contract. Contributions are invested in low-cost S&P 500 ETFs held by third-party custodians. When pool members exit, their uncollected growth flows directly to remaining participants. There is no insurance company involved.
+          </p>
+        </details>
+        <details class="mb-6">
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] How is the longevity benefit taxed?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            Savvly follows the tax treatment of the account type. In a qualified account, standard qualified account tax rules apply. In a non-qualified account, growth and payouts are generally subject to capital gains treatment. Clients should consult their tax advisor for specifics.
+          </p>
+        </details>
+        <details class="mb-6">
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] Where are client assets held?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            Assets are held by regulated third-party custodians, currently US Bank. Savvly does not hold client funds on its own balance sheet. If Savvly were to cease operations, client assets remain at the custodian, protected under the fund's governing documents.
+          </p>
+        </details>
+        <details class="mb-6">
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] Do I need an insurance license to offer Savvly?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            No. Savvly is a capital markets product. No insurance license is required.
+          </p>
+        </details>
+        <details>
+          <summary class="font-display font-semibold text-near-black cursor-pointer" style="font-size: 1.25rem;">[+] Can I include Savvly in a model portfolio?</summary>
+          <p class="font-body leading-relaxed text-near-black/80 mt-4">
+            Yes. The allocation can be integrated into your existing portfolio models as a dedicated longevity sleeve. Savvly provides advisor-facing materials and implementation support.
+          </p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="bg-vivid px-6 py-10" role="contentinfo">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+
+      <!-- Logo + copyright -->
+      <div class="flex flex-col gap-2">
+        <a href="index.html" aria-label="Savvly home" class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-baby rounded">
+          <img
+            src="../brand_assets/logo/savvly_logo.png"
+            alt="Savvly"
+            class="h-6 w-auto"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <span class="hidden text-white font-display font-semibold text-xl tracking-wide">SAVVLY</span>
+        </a>
+        <p class="text-white/40 text-xs font-body">© 2025 Savvly. All rights reserved.</p>
+      </div>
+
+      <!-- Legal links -->
+      <nav aria-label="Legal navigation">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 list-none m-0 p-0" role="list">
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Privacy</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Terms</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Disclosures</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Disclaimers</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Assumptions</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savvly — Longevity Benefit</title>
+  <meta name="description" content="Savvly is the first longevity benefit. Built for employers, financial advisors, and benefit brokers who are responsible for the financial well-being of others." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind via CDN with brand config -->
+  <script>
+    window.tailwind = window.tailwind || {};
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand':      '#3478EB',
+            'vivid':      '#2B3D9A',
+            'baby':       '#A7C7E7',
+            'pollon':     '#ECD06F',
+            'near-black': '#1A1A2E',
+          },
+          fontFamily: {
+            display: ['Source Serif 4', 'Georgia', 'serif'],
+            body: ['Verdana', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: {
+            'tight-xl': '-0.03em',
+            'tight-lg': '-0.02em',
+          },
+          lineHeight: {
+            'body': '1.68',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+
+<body class="bg-white font-body text-near-black antialiased">
+
+  <!-- ══════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════ -->
+  <header class="bg-white sticky top-0 z-50" role="banner">
+    <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="/" class="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded" aria-label="Savvly home">
+        <img
+          src="../brand_assets/logo/savvly_logo.png"
+          alt="Savvly"
+          class="h-7 w-auto"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+        />
+        <span class="hidden font-display font-semibold text-2xl tracking-wide" style="color:#2B3D9A;">SAVVLY</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul id="nav-links" class="hidden md:flex items-center gap-8 list-none m-0 p-0" role="list">
+        <li><a href="how-it-works.html" class="text-sm font-body font-medium">How It Works</a></li>
+        <li><a href="employers.html"    class="text-sm font-body font-medium">Employers</a></li>
+        <li><a href="advisors.html"     class="text-sm font-body font-medium">Financial Advisors</a></li>
+        <li><a href="brokers.html"      class="text-sm font-body font-medium">Benefit Brokers</a></li>
+        <li><a href="about.html"        class="text-sm font-body font-medium">About</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="hidden md:block">
+        <a href="#demo" class="btn-nav">Get Started</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button
+        id="hamburger"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="md:hidden flex flex-col gap-[5px] p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded"
+      >
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+        <span class="block w-5 h-px" style="background:#2B3D9A;"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden bg-white border-t px-6 pb-6 flex flex-col gap-4" style="border-color: rgba(43,61,154,0.1);">
+      <a href="how-it-works.html" class="text-sm font-medium py-2" style="color:#2B3D9A;">How It Works</a>
+      <a href="employers.html"    class="text-sm font-medium py-2" style="color:#2B3D9A;">Employers</a>
+      <a href="advisors.html"     class="text-sm font-medium py-2" style="color:#2B3D9A;">Financial Advisors</a>
+      <a href="brokers.html"      class="text-sm font-medium py-2" style="color:#2B3D9A;">Benefit Brokers</a>
+      <a href="about.html"        class="text-sm font-medium py-2" style="color:#2B3D9A;">About</a>
+      <a href="#demo" class="btn-nav self-start mt-2">Get Started</a>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="bg-white px-6 py-16" aria-label="Hero">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="font-display font-normal text-near-black mb-6" style="font-size: clamp(2.5rem, 6vw, 4rem); letter-spacing: -0.03em; line-height: 1.1;">
+        Your 401(k) wasn't built for a 100-year life.
+      </h1>
+      <p class="font-body text-lg leading-relaxed text-near-black/70 mb-10">
+        <strong>This is the first thing that was.</strong>
+      </p>
+      <p class="font-body leading-relaxed text-near-black/80 mb-10 max-w-2xl mx-auto">
+        <strong>Meet Savvly:</strong> They reinvented the way people save and invest for retirement. Now the math that works for big corporations works for people. Think sharing economy for retirement savings.
+      </p>
+      <div class="mb-10">
+        <div class="relative mx-auto" style="max-width: 760px;">
+          <div style="position: relative; padding-top: 56.25%; overflow: hidden; border-radius: 3px;">
+            <iframe src="https://www.youtube.com/embed/07bCG36uYDQ?autoplay=1&mute=1&loop=1&playlist=07bCG36uYDQ" title="Savvly Video" allow="autoplay; fullscreen" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+          </div>
+        </div>
+      </div>
+      <p class="font-display italic text-lg leading-relaxed text-near-black/80">
+        For the first time ever, a long life isn't a risk. It's the reward.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       BELOW-VIDEO PARAGRAPH
+  ══════════════════════════════════════════ -->
+  <section class="bg-white px-6 pb-20" style="padding-top: 4rem;" aria-label="Founding insight">
+    <div class="max-w-2xl mx-auto text-center">
+
+      <hr class="rule" style="margin-bottom: 2.5rem;" />
+
+      <!-- Founding paragraph block -->
+      <div class="space-y-5 text-left text-near-black font-body scroll-fade"
+           style="font-size: 1.0625rem; line-height: 1.72;">
+        <p>
+          We are at a crossroads.
+          A moment in history where living longer requires an entirely new way to build wealth and save for our futures.
+        </p>
+        <p>
+          Every other financial product treats your long life as a problem to manage.
+          Savvly treats it as the source of value itself.
+        </p>
+        <p>
+          We built our fund so participants could benefit when others exit early,
+          with unused assets flowing to the pool rather than a traditional insurer.
+        </p>
+        <p>
+          We spent years focused on regulatory compliance, including SEC registration
+          for applicable entities, because something this different needed to earn trust
+          before asking for it.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       PERSONA SUBHEAD
+  ══════════════════════════════════════════ -->
+  <section class="bg-white px-6 pt-4 pb-6 text-center" aria-label="Persona introduction">
+    <div class="max-w-3xl mx-auto scroll-fade">
+      <h2 class="font-display font-semibold text-near-black"
+          style="font-size: clamp(1.75rem, 3.5vw, 2.75rem); letter-spacing: -0.02em; line-height: 1.2;">
+        You are responsible for the financial well-being of others.
+        <span class="text-brand">This was made for you.</span>
+      </h2>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BELOW-VIDEO PARAGRAPH
+  ══════════════════════════════════════════ -->
+  <section class="bg-white px-6 py-16" aria-label="Founding insight">
+    <div class="max-w-4xl mx-auto">
+      <p class="font-body leading-relaxed text-near-black/80">
+        We are at a crossroads A moment in history where living longer requires an entirely new way to build wealth and save for our futures. Every other financial product treats your long life as a problem to manage. Savvly treats it as the source of value itself. We built our fund so participants could benefit when others exit early, with unused assets flowing to the pool rather than a traditional insurer. We spent years focused on regulatory compliance, including SEC registration for applicable entities, because something this different needed to earn trust before asking for it.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PERSONA SUBHEAD
+  ══════════════════════════════════════════ -->
+  <section class="bg-baby/10 px-6 py-16" aria-label="Persona subhead">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-display font-semibold text-near-black" style="font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.025em;">
+        You are responsible for the financial well-being of others. This was made for you.
+      </h2>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PERSONA BRANCHING CARDS
+  ══════════════════════════════════════════ -->
+  <section class="bg-white px-6 pt-12 pb-20" aria-label="Persona cards">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Three cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Card 1: Employers & HR -->
+        <article class="persona-card scroll-fade" aria-label="Employers and HR">
+          <h3 class="font-display font-semibold text-near-black mb-4"
+              style="font-size: 1.35rem; letter-spacing: -0.015em; line-height: 1.25;">
+            You run HR and benefits. This changes the conversation.
+          </h3>
+          <p class="text-sm text-near-black/70 leading-relaxed mb-6">
+            Live in under a week. No discrimination testing. Covers the years every other benefit ignores.
+          </p>
+          <ul class="space-y-3 mb-8" role="list">
+            <li class="card-bullet">&lt;1 week setup — no legal red tape</li>
+            <li class="card-bullet">No discrimination testing or health screening</li>
+            <li class="card-bullet">DEI-positive — equally accessible to all</li>
+          </ul>
+          <a href="employers.html" class="card-link" aria-label="Learn more for employers">
+            FOR EMPLOYERS →
+          </a>
+          <svg class="border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="#3478EB" stroke-width="0.5" pathLength="400" />
+          </svg>
+        </article>
+
+        <!-- Card 2: Financial Advisors -->
+        <article class="persona-card scroll-fade" aria-label="Financial Advisors and RIAs">
+          <h3 class="font-display font-semibold text-near-black mb-4"
+              style="font-size: 1.35rem; letter-spacing: -0.015em; line-height: 1.25;">
+            Savvly can address the problems traditional portfolios may not fully solve
+          </h3>
+          <p class="text-sm text-near-black/70 leading-relaxed mb-6">
+            Your clients are spending less than they should — afraid of outliving their savings. Savvly removes that fear structurally.
+          </p>
+          <ul class="space-y-3 mb-8" role="list">
+            <li class="card-bullet">A modest allocation (e.g., ~10%) could improve portfolio resilience over time, based on modeled scenarios</li>
+            <li class="card-bullet">AUM preserved — reduces liquidation pressure</li>
+            <li class="card-bullet">Tax: LTCG · Portable · Fair Exit on death</li>
+          </ul>
+          <a href="advisors.html" class="card-link" aria-label="Learn more for financial advisors">
+            ADVISOR RESOURCES →
+          </a>
+          <svg class="border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="#3478EB" stroke-width="0.5" pathLength="400" />
+          </svg>
+        </article>
+
+        <!-- Card 3: Benefit Brokers -->
+        <article class="persona-card scroll-fade" aria-label="Benefit Brokers">
+          <h3 class="font-display font-semibold text-near-black mb-4"
+              style="font-size: 1.35rem; letter-spacing: -0.015em; line-height: 1.25;">
+            Offer something no one else has.
+          </h3>
+          <p class="text-sm text-near-black/70 leading-relaxed mb-6">
+            Every broker offers the same 401(k) lineup. Savvly is the first longevity benefit.
+          </p>
+          <ul class="space-y-3 mb-8" role="list">
+            <li class="card-bullet">First in category — wide open market</li>
+            <li class="card-bullet">Employer live &lt;1 week — no friction in the close</li>
+            <li class="card-bullet">Platform integration available (Rippling, etc.)</li>
+          </ul>
+          <a href="brokers.html" class="card-link" aria-label="Learn more for benefit brokers">
+            BROKER PROGRAM →
+          </a>
+          <svg class="border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="#3478EB" stroke-width="0.5" pathLength="400" />
+          </svg>
+        </article>
+
+      </div>
+
+      <!-- Employees / Individuals Row -->
+      <div class="mt-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 scroll-fade"
+           style="background: rgba(167,199,231,0.13); border-left: 3px solid #A7C7E7; border-radius: 2px; padding: 3rem 2.5rem;">
+        <p class="font-body leading-relaxed max-w-xl" style="font-size: 1rem; color: rgba(26,26,46,0.72);">
+          Interested in Savvly for yourself? Savvly is offered through employers.
+          Ask your HR team. We've written the email for you.
+        </p>
+        <a href="mailto:?subject=Worth%20a%20look!%20%20A%20new%20retirement%20benefit%20called%20Savvly&body=Hi%20%5BHR%2FBenefits%20contact%5D%2C%0A%0AI%20came%20across%20something%20called%20Savvly%20and%20wanted%20to%20flag%20it%20for%20you.%20It%27s%20a%20longevity%20benefit.%20It%27s%20basically%20a%20way%20for%20employees%20to%20invest%20for%20the%20later%20years%20of%20retirement%20that%20a%20401%28k%29%20doesn%27t%20really%20cover.%0A%0AFrom%20what%20I%20can%20tell%2C%20it%27s%20SEC-registered%2C%20can%20be%20set%20up%20in%20under%20a%20week%2C%20and%20doesn%27t%20require%20any%20discrimination%20testing.%20It%20looks%20like%20it%20works%20alongside%20existing%20benefits%2C%20not%20instead%20of%20them.%0A%0AHere%27s%20their%20site%3A%20https%3A%2F%2Fsavvly.com%0A%0AWould%20you%20be%20open%20to%20taking%20a%20look%3F%20I%20think%20a%20few%20of%20us%20would%20be%20interested.%0A%0AThanks%2C%0A%0A%5BYour%20name%5D" class="btn-primary flex-shrink-0">COPY THE EMAIL TO HR →</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER CTA
+  ══════════════════════════════════════════ -->
+  <section id="demo" class="bg-near-black px-6 py-24 text-center" aria-label="Request a demo">
+    <div class="max-w-2xl mx-auto scroll-fade">
+
+      <h2 class="font-display font-semibold text-white"
+          style="font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.025em; line-height: 1.1;">
+        See Savvly in action.
+      </h2>
+
+      <p class="mt-6 text-white/60 font-body text-base leading-body max-w-lg mx-auto">
+        Whether you're an employer, advisor, or broker, we'll walk you through how
+        Savvly fits your goals and your book of business.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="mailto:demo@savvly.com" class="btn-demo">
+          REQUEST A DEMO
+        </a>
+        <a href="how-it-works.html" class="btn-demo-ghost">
+          HOW THE POOL WORKS →
+        </a>
+      </div>
+
+      <!-- Credibility line -->
+      <p class="font-body uppercase"
+         style="margin-top: 3.5rem; font-size: 0.9375rem; letter-spacing: 0.07em; font-weight: 500; color: rgba(255,255,255,0.88);">
+        SEC-REGISTERED · NOT INSURANCE · NOT AN ANNUITY · ASSETS AT VANGUARD · FIDELITY · US BANK
+      </p>
+
+      <!-- Disclaimer -->
+      <p class="font-body"
+         style="margin-top: 0.875rem; font-size: 0.6875rem; line-height: 1.65; max-width: 520px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.42);">
+        Savvly is not a bank deposit. Not FDIC insured. Not guaranteed.
+        Investing involves risk, including loss of principal.
+        <a href="#" style="text-decoration: underline; color: inherit;" class="hover:text-white/70 transition-colors">See full disclosures and prospectus.</a>
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="bg-vivid px-6 py-10" role="contentinfo">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+
+      <!-- Logo + copyright -->
+      <div class="flex flex-col gap-2">
+        <a href="/" aria-label="Savvly home" class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-baby rounded">
+          <img
+            src="../brand_assets/logo/savvly_logo.png"
+            alt="Savvly"
+            class="h-6 w-auto"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <span class="hidden text-white font-display font-semibold text-xl tracking-wide">SAVVLY</span>
+        </a>
+        <p class="text-white/40 text-xs font-body">© 2025 Savvly. All rights reserved.</p>
+      </div>
+
+      <!-- Legal links -->
+      <nav aria-label="Legal navigation">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 list-none m-0 p-0" role="list">
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Privacy</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Terms</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Disclosures</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Disclaimers</a></li>
+          <li><a href="#" class="text-white/50 hover:text-white/80 text-xs font-body transition-colors">Assumptions</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </footer>
+
+  <script src="/src/js/main.js"></script>
+</body>
+</html>
