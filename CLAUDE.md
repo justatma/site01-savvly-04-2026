@@ -185,3 +185,4 @@ savvly-website/
 - Confirm copy file exists before building any page. If missing, stop and report.
 - Logo path is `brand_assets/logo/savvly_logo.png` with no leading space. Verify it loads on every build.
 - Do not use all-caps for headlines.
+- Do not modify, rewrite, rephrase, or "improve" any text content on any page without explicit instruction. All copy is approved and locked. If a build task requires placeholder text, use [PLACEHOLDER] and flag it. Copy changes require a separate, explicit request.
